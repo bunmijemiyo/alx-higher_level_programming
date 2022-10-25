@@ -12,4 +12,5 @@ def write_file(filename="", text=""):
         Exception: Raises an exception if file cant be open or written
     """
     with open(filename, mode='w', encoding='utf-8') as f:
-        return f.write(text)
+        f.write(text)
+    return len(text)
